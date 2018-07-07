@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>recommend course</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="./lib/jquery/js/jquery.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/css02.css">
+</head>
+<body>
+<div class="container">
+    <ul class="nav nav-pills">
+        <li><a href="#">免费体验课</a></li>
+        <li><a href="#">初级体验课</a></li>
+        <li><a href="#">中级体验课</a></li>
+        <li><a href="#">高级体验课</a></li>
+    </ul>
+</div>
+<div class="list-group">
+    <a href="#" class="list-group-item active">
+        <h4 class="list-group-item-heading">
+            免费七天体验课堂
+        </h4>
+    </a>
+    <div class="loop">
+        <ul class="lo">
+            <li><img src="./img/yujiaCG2.jpg" style="height: 260px;width: 100%;" alt="图片加载错误"></li>
+        </ul>
+    </div>
+    <a href="#" class="list-group-item">
+        <p class="list-group-item-text">
+            您可以通过网页进行免费报名。
+        </p>
+    </a>
+    <a href="#" class="list-group-item">
+        <p class="list-group-item-text">
+            同时支持电话、微信公众号、到场馆现场报名
+        </p>
+        <p class="list-group-item-text">
+            我们提供24小时线上报名服务。
+            <br>
+            现场报名时间为：08:00--21:30
+        </p>
+    </a>
+</div>
+<div class="text">
+    <ul class="clearfix">
+        <li><button>free</button></li>
+        <li><button>primary</button></li>
+        <li><button>middle</button></li>
+        <li><button>high</button></li>
+    </ul>
+</div>
+<div id="target">
+    press a button
+</div>
+<script>
+    var buttons = document.getElementsByTagName("button")
+    for (var i =0; i < buttons.length; i++){
+        buttons[i].onclick = handleButtonPress;
+    }
+    function handleButtonPress(e){
+        var httpRequest = new XMLHttpRequest();
+        httpRequest.onreadystatechange = handleRequest;
+        httpRequest.open("GET",e.target.innerHTML + '.html')
+        httpRequest.send();
+    }
+    function handleRequest(e) {
+        if (e.target.readyState == XMLHttpRequest.DONE && e.target.status == 200){
+            document.getElementById("target").innerHTML = e.target.responseText;
+        }
+    }
+
+</script>
+</body>
+</html>

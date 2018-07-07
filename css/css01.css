@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html , body {
+    width: 100%;
+    position: relative;
+}
+.imgA{
+    width: 100%;
+    position: relative;
+}
+.imgA img {
+    width: 100%;
+    height: 150px;
+}
+.imgA span{
+    position: absolute;
+    top:125px;
+    left:10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.address{
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #8c8c8c;
+}
+.adres{
+    float: left;
+    flex:10;
+    margin:10px;
+}
+.address span{
+    float: right;
+    margin:10px;
+    flex: 2;
+}
+.address img{
+    width: 16px;
+    height: 16px;
+}
+.text{
+    width: 100%;
+    border-bottom: 1px solid #8c8c8c;
+}
+.text p{
+    height: 100px;
+    overflow: hidden;
+}
+.textAll{
+    width: 100%;
+    text-align: center;
+}
+.teacher{
+    width: 100%;
+}
+.tea{
+    display: flex;
+    margin: 10px;
+}
+.tea span{
+    flex: 4;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border-left: 2px solid #ba6bb1;
+}
+.tea a{
+    color: #ba6bb1;
+}
+.pic {
+    list-style: none;
+    padding-top: 20px;
+    border-top: 1px solid #8c8c8c;
+}
+.banner{
+    height: 20px;
+    width: 100%;
+    background:#d4d4d4;
+}
+.clearfix:after{
+   content: "";
+    overflow: hidden;
+    clear: both;
+}
+.pic li img{
+    width: 90px;
+    height: 80px;
+}
+.course{
+    width: 100%;
+}
+.cor{
+    width: 100%;
+    display: flex;
+    margin: 8px;
+}
+.course span{
+    flex: 3;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border-left: 2px solid #ba6bb1;
+}
+.cor a{
+    margin-right: 10px;
+    color: #ba6bb1;
+}
+.corTime{
+    width: 100%;
+    border-top: 1px solid #8c8c8c;
+    list-style: none;
+}
+.overflows{
+    overflow: hidden;
+}
+.corTime li{
+   float: left;
+    margin: 13px;
+}
+.bes{
+    width: 100%;
+    list-style: none;
+}
+.besA {
+    width: 100%;
+}
+.besCont img{
+    width: 117px;
+    height: 82px;
+}
+.title{
+    font-size: 14px;
+    font-weight: 700;
+}
+.price{
+    font-size: 20px;
+
+    font-weight: 700;
+    color:#cd0a0a;
+}
+.corAll a{
+    width: 100%;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    border-top: 1px solid #8c8c8c;
+}
+.by{
+    text-decoration: line-through;
+    font-size: 14px;
+    color: black;
+}
+.bal{
+    width: 100%;
+}
+.bal ul{
+    list-style: none;
+}
+.bal li{
+    margin-left:5px;
+    float: left;
+    width: 85px;
+    color: #ba6bb1;
+    border: 1px solid #ba6bb1;
+    text-align: center;
+    border-radius: 10px;
+}
+.cd{
+    list-style: none;
+    overflow: hidden;
+}
+.cd li{
+    text-align: center;
+}
+.cd p{
+    width: 85px;
+    height: 60px;
+    background-color:#bec1e8;
+}
+.comment{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.com{
+    border-bottom: 1px solid #8c8c8c;
+}
+.com span{
+    height: 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    border-left: 2px solid #ba6bb1
+}
+.perPic img{
+    width: 65px;
+    height: 65px;
+   margin: 10px;
+    border-radius: 50%;
+}
+.suhan{
+    width: 100%;
+}
+.suH{
+    list-style: none;
+}
+.suH li{
+    float: left;
+    border: 1px solid #ba6bb1;
+    border-radius: 10px;
+    color: #ba6bb1;
+    margin-right:10px;
+    text-align: center;
+}
+.comText{
+    width: 100%;
+    margin-top: 10px;
+    float: left;
+}
+.yuga{
+    width: 100%;
+    position: absolute;
+    bottom: -400px;
+}
+.yugaroom{
+    display: flex;
+    margin: 10px;
+}
+.yugaroom span{
+    flex: 4;
+    height: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border-left: 2px solid #ba6bb1;
+}
+.yugaroom a{
+    color: #ba6bb1;
+}
+.room{
+    list-style: none;
+    padding-top: 15px;
+}
+.room li img{
+    width: 85px;
+    height: 80px;
+}
+.room li p{
+    width: 90px;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom:-500px;
+}
+
+
+
