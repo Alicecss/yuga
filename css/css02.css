@@ -23,16 +23,6 @@ html,body, .container{
 .nav li:hover{
     color:#cd0a0a;
 }
-.loop{
-    width: 100%;
-}
-.lo{
-    list-style: none;
-}
-.lo li{
-    text-align: center;
-}
-.lo li img{}
 .text{
     width: 100%;
 }
